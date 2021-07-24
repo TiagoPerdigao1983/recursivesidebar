@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import RecursiveNavbar from "./Components/RecursiveNavbar";
+
+const navbarLinks = [
+  { name: "features", label: "Features" },
+  { name: "pricing", label: "Pricing" },
+  { name: "Dropdown", label: "Dropdown" },
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <RecursiveNavbar navbarLinks={navbarLinks} />
+    </>
   );
 }
 
